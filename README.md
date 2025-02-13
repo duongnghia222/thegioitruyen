@@ -1,4 +1,4 @@
-# TruyenHD - Web Novel Platform
+# TruyenBanQuyen - Web Novel Platform
 
 A modern web novel reading platform built with Next.js, TypeScript, and MongoDB.
 

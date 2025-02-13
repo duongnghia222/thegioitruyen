@@ -24,7 +24,7 @@ const Header = () => {
             textShadow={`0 0 10px ${colorMode === 'light' ? '#3182CE' : '#63B3ED'}`}
             cursor="pointer"
           >
-            TruyenHD
+            TruyenBanQuyen
           </Text>
         </Link>
 
