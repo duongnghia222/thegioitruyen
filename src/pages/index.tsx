@@ -4,6 +4,7 @@ import NovelCard from '../components/novel/NovelCard';
 import FeaturedCarousel from '../components/novel/FeaturedCarousel';
 import Announcements from '../components/layout/Announcements';
 import RecentUpdates from '../components/novel/RecentUpdates';
+import SampleNovelGrid from '../components/novel/SampleNovelGrid';
 import { GetServerSideProps } from 'next';
 import { Novel } from '../types/novel';
 
@@ -53,18 +54,7 @@ export default function Home({ featuredNovels, recentUpdates, announcements }: H
           {/* Recommended Section */}
           <Box mb={8}>
             <Heading size="lg" mb={4}>BTY Đề Cử</Heading>
-            <Grid
-              templateColumns={{
-                base: '1fr',
-                md: 'repeat(2, 1fr)',
-                lg: 'repeat(3, 1fr)'
-              }}
-              gap={6}
-            >
-              {featuredNovels.map((novel) => (
-                <NovelCard key={novel.id} novel={novel} />
-              ))}
-            </Grid>
+            <SampleNovelGrid />
           </Box>
 
           {/* Recent Updates */}
